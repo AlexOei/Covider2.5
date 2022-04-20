@@ -1,0 +1,32 @@
+[{
+  "id": "94",
+  "code": "abc",
+  "name": "E. F. Hutton Park",
+  "short": "A triangular expanse of lawn bounded by the USC Annenberg School for Communication building, Bing Theatre and Norris Cinema Theatre, E. F. Hutton Park was made possible by a gift from Robert Fomon ’47.",
+  "latitude": "34.0216751099",
+  "longitude": "-118.2854461670",
+  "photo": "hutton.jpg",
+  "url": "",
+  "campus": "1",
+  "address": "",
+  "accessMap": "1",
+  "type": [
+    "Park/Plaza"
+  ]
+},
+{
+"id": "846",
+"code": "DML",
+"name": "East Asian Library ",
+"short": "Situated on the first floor of Doheny Memorial Library, the East Asian Library’s collections include Chinese, Japanese, and Korean-language materials, with an emphasis on social sciences and humanities.",
+"latitude": "34.0202369690",
+"longitude": "-118.2833557129",
+"photo": "DML_WEB.jpg",
+"url": "https://libraries.usc.edu/locations/east-asian-library ",
+"campus": "1",
+"address": "",
+"accessMap": "1",
+"type": [
+"Libraries"
+]
+}]

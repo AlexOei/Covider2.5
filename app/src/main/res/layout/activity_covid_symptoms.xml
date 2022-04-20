@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CovidSymptoms">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/title"
+        android:textColor="#D500F9"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.436"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/covidPositve"
+        android:layout_width="118dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="172dp"
+        android:text="Are you covid Positive?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/groupForCovidPositive"
+        android:layout_width="205dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="172dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/yesForCovidPositive"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="Yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="covidHandler"/>
+
+        <RadioButton
+            android:id="@+id/noForCovidPositive"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="No"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="covidHandler"/>
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/fever"
+        android:layout_width="140dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="272dp"
+        android:text="Do you have fever?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/groupForFever"
+        android:layout_width="205dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="272dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/yesForFever"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="Yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="feverHandler"/>
+
+        <RadioButton
+            android:id="@+id/noForFever"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="No"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="feverHandler"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/soreThroat"
+        android:layout_width="140dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="372dp"
+        android:text="Do you have a sore throat?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/groupForSoreThroat"
+        android:layout_width="205dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="372dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/yesForSoreThroat"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="Yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="soreThroatHandler"/>
+
+        <RadioButton
+            android:id="@+id/noForSoreThroat"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="No"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="soreThroatHandler"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/otherSymptoms"
+        android:layout_width="140dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="472dp"
+        android:text="Any other symptoms?"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/groupForOtherSymptoms"
+        android:layout_width="205dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="472dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RadioButton
+            android:id="@+id/yesForOtherSymptoms"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="Yes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="otherSymptomsHandler"/>
+
+        <RadioButton
+            android:id="@+id/noForOtherSymptoms"
+            android:layout_width="100dp"
+            android:layout_height="33dp"
+            android:text="No"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:onClick="otherSymptomsHandler"/>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitForHealthForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="572dp"
+        android:backgroundTint="#D500F9"
+        android:onClick="submitButtonHandler"
+        android:text="SUBMIT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

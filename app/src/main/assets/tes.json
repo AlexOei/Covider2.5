@@ -1,0 +1,115 @@
+[
+  {
+    "id": "226",
+    "code": "CAL",
+    "name": "3434 S. Grand Building",
+    "short": "The 3434 S. Grand Avenue Building houses USC's Information Technology Services programs, along with staff from Administrative Information Systems and University Libraries.",
+    "latitude": "34.0190429688",
+    "longitude": "-118.2763519287",
+    "photo": "CAL.jpg",
+    "url": "https://libraries.usc.edu/locations/grand-avenue-library-and-book-depository",
+    "campus": "1",
+    "address": "3434 S. Grand Ave. \r\nLos Angeles CA 90007\t",
+    "accessMap": "1",
+    "type": [
+      "Building",
+      "Libraries"
+    ]
+  },
+  {
+    "id": "274",
+    "code": "ACC",
+    "name": "Accounting Library",
+    "short": "Located in room 105 of the Leventhal School of Accounting building, this library serves the educational and research needs of accounting students and faculty. ",
+    "latitude": "34.0192222595",
+    "longitude": "-118.2856826782",
+    "photo": "ACC.jpg",
+    "url": "https://libraries.usc.edu/locations/accounting-library",
+    "campus": "1",
+    "address": "",
+    "accessMap": "1",
+    "type": [
+      "Libraries"
+    ]
+  },
+  {
+    "id": "67",
+    "code": "SKS",
+    "name": "Admission Center (Steven and Kathryn Sample Hall)",
+    "short": "The USC Admission Center is located in room 202 of Steven and Kathryn Sample Hall/Ronald Tutor Campus Center.",
+    "latitude": "34.0199394226",
+    "longitude": "-118.2861480713",
+    "photo": "SKS-III-WEB-DSCF3053.jpg",
+    "url": "",
+    "campus": "1",
+    "address": "",
+    "accessMap": "1",
+    "type": [
+      "Other"
+    ]
+  },
+  {
+    "id": "68",
+    "code": "ACB",
+    "name": "Ahmanson Center",
+    "short": "",
+    "latitude": "34.0193977356",
+    "longitude": "-118.2870559692",
+    "photo": "ACB.jpg",
+    "url": "",
+    "campus": "1",
+    "address": "",
+    "accessMap": "1",
+    "type": [
+      "Building"
+    ]
+  },
+  {
+    "id": "69",
+    "code": "AHN",
+    "name": "Ahn House",
+    "short": "The historic Ahn House is the headquarters of USC’s Korean Studies Institute.",
+    "latitude": "34.0229301453",
+    "longitude": "-118.2840957642",
+    "photo": "AHN.jpg",
+    "url": "http://college.usc.edu/ksi/about_ksi/history.cfm",
+    "campus": "1",
+    "address": "",
+    "accessMap": "1",
+    "type": [
+      "Building"
+    ]
+  },
+  {
+    "id": "70",
+    "code": "ALM",
+    "name": "Alumni House",
+    "short": "Widney Alumni House, built in 1880, is a state historical landmark and the oldest university building still in continuous use in Southern California. Today it is home to the USC Alumni Association.",
+    "latitude": "34.0194320679",
+    "longitude": "-118.2828750610",
+    "photo": "ALM.jpg",
+    "url": "",
+    "campus": "1",
+    "address": "",
+    "accessMap": "1",
+    "type": [
+      "Building"
+    ]
+  },
+  {
+    "id": "3",
+    "code": "",
+    "name": "Alumni Park",
+    "short": "Alumni Park is the setting for USC’s commencement exercises each spring. The park also provides space for outdoor concerts and other special events – including career and craft fairs – throughout the year.",
+    "latitude": "34.0204734802",
+    "longitude": "-118.2845077515",
+    "photo": "APX.jpg",
+    "url": "",
+    "campus": "1",
+    "address": "",
+    "accessMap": "1",
+    "type": [
+      "Park/Plaza",
+      "Fountains/Public Art"
+    ]
+  }]
