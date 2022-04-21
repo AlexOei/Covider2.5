@@ -86,6 +86,55 @@ public class Firebase {
 
     };
 
+
+
+    public String getCovidRisk (String string, TextView i){
+
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Buildings").child(string).child("health_history");
+        String risk = null;
+        reference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dSnap: snapshot.getChildren()){
+                    String reference = dSnap.child("time").getValue().toString();
+                    String covid = dSnap.child("status").getValue().toString();
+                    Boolean cov = Boolean.parseBoolean(covid);
+                    Long past = Long.parseLong(reference);
+                    //get current time
+                    Long currentTime = System.currentTimeMillis();
+                    if (currentTime - past <= 86400000 && cov ){
+                        i.setText("High");
+
+                        return;
+                    }else if (currentTime - past >= 86400000  && currentTime - past <= 259200000 && cov){
+                        i.setText( "Medium");
+
+                        return;
+                    }else{
+                        i.setText( "Low");
+
+                    }
+
+                    //if any times between now and 3 days, high
+                    //if any times between now and 6 days, medium
+                    //otherwise low
+
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        return risk;
+
+
+    }
+
     public void getList(ActivityListBinding binding, String string, ArrayList<Building> buildingArrayList, Context context){
 
 
@@ -122,7 +171,6 @@ public class Firebase {
 
                                         Intent i = new Intent(context, BuildingActivity.class);
                                         i.putExtra("name", buildingArrayList.get(position).getName());
-                                        i.putExtra("risk", buildingArrayList.get(position).getRisk().toString());
                                         i.putExtra("code", buildingArrayList.get(position).getCode());
                                         i.putExtra("freqOrSched", "Frequently Visited");
 
@@ -190,7 +238,6 @@ public class Firebase {
 
                                         Intent i = new Intent(context, BuildingActivity.class);
                                         i.putExtra("name", buildingArrayList.get(position).getName());
-                                        i.putExtra("risk", buildingArrayList.get(position).getRisk().toString());
                                         i.putExtra("code", buildingArrayList.get(position).getCode());
                                         i.putExtra("freqOrSched", "Scheduled Locations");
                                         context.startActivity(i);

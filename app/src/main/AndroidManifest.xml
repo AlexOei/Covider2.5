@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Covider">
         <activity
+            android:name=".BuildingCheck"
+            android:exported="false" />
+        <activity
             android:name=".InstructorNotification"
             android:exported="false" />
         <activity

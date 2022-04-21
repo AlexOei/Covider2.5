@@ -4,8 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_building.xml" value="0.296195652173913" />
-        <entry key="app/src/main/res/layout/activity_covid_symptoms.xml" value="0.41893115942028986" />
+        <entry key="app/src/main/res/layout/activity_building_check.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_class_section.xml" value="0.13425925925925927" />
+        <entry key="app/src/main/res/layout/activity_covid_symptoms.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_frequently_visited.xml" value="0.41893115942028986" />
+        <entry key="app/src/main/res/layout/activity_instructor_notification.xml" value="0.13425925925925927" />
         <entry key="app/src/main/res/layout/activity_list.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_listsched.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.41893115942028986" />
